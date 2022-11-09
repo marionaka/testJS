@@ -1,0 +1,17 @@
+footer{
+    align-items: center;
+    width: 100%;
+    background-color: map-get($colores, color-azul);
+    h5{
+        font-family: 'Courgette', cursive;
+        padding: 1rem;
+        color: map-get($colores, color-rosa);
+        text-align: start;
+        margin: 0rem!important;
+    .sinMargin{
+        margin: 0rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        }
+    }
+}

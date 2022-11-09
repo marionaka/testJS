@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  grid-row: 1/3;
+  grid-column: 1/5;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  background-color: #f7dad9;
+}
+header h1 {
+  text-align: center;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+  font-size: 3rem;
+  padding: 0.4rem;
+  font-weight: bolder;
+}
+header .colorNavbar {
+  background-color: #748DA6 !important;
+  font-family: "Raleway", sans-serif;
+}
+header .nav-link {
+  color: #f7dad9 !important;
+}
+header .nav-link:hover {
+  color: #5D534A !important;
+}
+
+main {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #f7dad9, #FFF5DA);
+}
+main h2 {
+  text-align: center;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bolder;
+}
+main h2 .titulo {
+  color: #5D534A;
+}
+main .titulo-index {
+  text-align: center;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bolder;
+}
+main .subtitulo-index {
+  text-align: center;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bolder;
+}
+main .background-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+main .ceroCincoPadding {
+  padding: 2rem 0rem;
+}
+main .ceroCincoPadding .cajaIndex {
+  display: block;
+  width: 90%;
+  height: auto;
+  padding: 2rem;
+  border: 0.7rem #9CB4CC solid;
+  text-align: justify;
+  overflow: hidden;
+  margin: 0rem auto;
+}
+main .ceroCincoPadding .cajaIndex p {
+  line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+  font-family: "Raleway", sans-serif;
+  color: #5D534A;
+}
+main .ceroCincoPadding .cajaIndex .img-center {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+main .ceroCincoPadding .cajaIndex .centrado {
+  display: block;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0rem auto;
+  padding: 1rem;
+}
+main .paddingHistoria {
+  padding: 2rem 0rem;
+}
+main .paddingHistoria .cajaHistoria {
+  display: block;
+  width: 90%;
+  height: auto;
+  padding: 2rem;
+  border: 0.7rem #9CB4CC solid;
+  text-align: justify;
+  overflow: hidden;
+  margin: 0rem auto;
+}
+main .paddingHistoria .cajaHistoria p {
+  line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+  font-family: "Raleway", sans-serif;
+  color: #5D534A;
+}
+main .paddingHistoria .cajaHistoria .imagenCentrada {
+  text-align: center;
+}
+main .galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  padding: 2rem;
+  text-align: justify;
+}
+main .galeria img {
+  padding: 1rem;
+  width: 100%;
+}
+main .galeria .justificado {
+  line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+  font-family: "Raleway", sans-serif;
+  color: #5D534A;
+}
+main .productos {
+  display: grid;
+  border: 0.7rem #9CB4CC solid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 2.5rem 3rem 0rem 3rem;
+}
+main .productos .card {
+  border: #9CB4CC solid;
+  border-width: 0.5rem;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #5D534A;
+  margin: 2rem auto;
+}
+main .productos .card .btn-cyc {
+  background-color: #9CB4CC;
+}
+main .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+main .img-flex {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  color: #5D534A;
+  font-family: "Raleway", sans-serif;
+}
+main .boton {
+  background-color: #748DA6 !important;
+  border-color: #748DA6 !important;
+}
+
+footer {
+  align-items: center;
+  width: 100%;
+  background-color: #748DA6;
+}
+footer h5 {
+  font-family: "Courgette", cursive;
+  padding: 1rem;
+  color: #f7dad9;
+  text-align: start;
+  margin: 0rem !important;
+}
+footer h5 .sinMargin {
+  margin: 0rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  main .productos {
+    display: grid;
+    border: 0.7rem #9CB4CC solid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 2.5rem 3rem 0rem 3rem;
+  }
+}
+@media (max-width: 740px) {
+  main .productos {
+    display: grid;
+    border: 0.7rem #9CB4CC solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    margin: 2.5rem 3rem 0rem 3rem;
+  }
+}
+@media (max-width: 576px) {
+  main .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    text-align: justify;
+  }
+  main .galeria .posicion1 {
+    order: -16;
+  }
+  main .galeria .posicion2 {
+    order: -15;
+  }
+  main .galeria .posicion3 {
+    order: -13;
+  }
+  main .galeria .posicion4 {
+    order: -14;
+  }
+  main .galeria .posicion5 {
+    order: -12;
+  }
+  main .galeria .posicion6 {
+    order: -11;
+  }
+  main .galeria .posicion7 {
+    order: -9;
+  }
+  main .galeria .posicion8 {
+    order: -10;
+  }
+  main .galeria .posicion9 {
+    order: -8;
+  }
+  main .galeria .posicion10 {
+    order: -7;
+  }
+  main .galeria .posicion11 {
+    order: -5;
+  }
+  main .galeria .posicion12 {
+    order: -6;
+  }
+  main .galeria .posicion13 {
+    order: -4;
+  }
+  main .galeria .posicion14 {
+    order: -3;
+  }
+  main .galeria .posicion15 {
+    order: -1;
+  }
+  main .galeria .posicion16 {
+    order: -2;
+  }
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* A partir de aca modificamos manualmente el CSS para las clases de JS */
+
+main #catalogo{
+  background-image: linear-gradient(to bottom, #f7dad9, #FFF5DA); 
+  height: auto;
+  display: flex;
+}
+
+main .card{
+  border: 0.3rem #5D534A solid;
+  width: 15rem;
+  height: 25rem;
+  background-color: #f7dad9;
+  margin: 0.5rem;
+}
+
+.card-img-top{
+  display: block;
+  width: 90%;
+  height: 55%;
+  border: 0.2rem #9CB4CC solid;
+  text-align: justify;
+  overflow: hidden;
+  margin: 0.5rem auto;
+  background-color: #5D534A;
+}
+
+.btn-primary{
+  background-color: #9CB4CC;
+  border-color: #9CB4CC;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+}
+
+.btn-primary:hover{
+  background-color: #6193c5;
+  border-color: #6193c5;
+  color: #5D534A;
+}
+
+.btn-primary:focus{
+  background-color: #6193c5;
+  border-color: #6193c5;
+  color: #5D534A;
+}
+
+.btn-primary:active{
+  background-color: #6193c5;
+  border-color: #6193c5;
+}
+
+.btn-primary:visited{
+  background-color: #6193c5;
+  border-color: #6193c5;
+}
+
+.list-group{
+  background-color: #f7dad9;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+}
+
+.mx-2{
+  background-color: #9CB4CC;
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+}
+
+.card-title{
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+}
+
+.card-text{
+  color: #5D534A;
+  font-family: "Courgette", cursive;
+}

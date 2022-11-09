@@ -1,0 +1,118 @@
+$colores:(
+    color-rosa: #f7dad9,
+    color-marron: #5D534A,
+    color-azul: #748DA6,
+    color-anaranjado: #FFF5DA,
+    color-celeste: #9CB4CC,
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin titulo($tamaño, $padding){
+    text-align: center;
+    color:  map-get($colores, color-marron);
+    font-family: 'Courgette', cursive;
+    font-size: $tamaño;
+    padding: $padding;
+    font-weight: bolder;
+}
+
+@import "header";
+@import "main";
+@import "footer";
+
+
+@media (max-width:1000px){
+    main{
+        .productos{
+            display: grid;
+            border: 0.7rem #9CB4CC solid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            margin: 2.5rem 3rem 0rem 3rem;
+        }
+    }
+}
+@media (max-width:740px){
+    main{
+        .productos{
+            display: grid;
+            border: 0.7rem #9CB4CC solid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            margin: 2.5rem 3rem 0rem 3rem;
+        }
+    }
+}
+
+@media (max-width:576px){
+    main{
+        .galeria{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 2rem;
+            text-align: justify;
+            .posicion1{
+                order: -16;
+            }
+            .posicion2{
+                order: -15;
+            }
+            .posicion3{
+                order: -13;
+            }
+            .posicion4{
+                order: -14;
+            }
+            .posicion5{
+                order: -12;
+            }
+            .posicion6{
+                order: -11;
+            }
+            .posicion7{
+                order: -9;
+            }
+            .posicion8{
+                order: -10;
+            }
+            .posicion9{
+                order: -8;
+            }
+            .posicion10{
+                order: -7;
+            }
+            .posicion11{
+                order: -5;
+            }
+            .posicion12{
+                order: -6;
+            }
+            .posicion13{
+                order: -4;
+            }
+            .posicion14{
+                order: -3;
+            }
+            .posicion15{
+                order: -1;
+            }
+            .posicion16{
+                order: -2;
+            }
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            }
+    }
+}
+
+

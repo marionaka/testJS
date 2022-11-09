@@ -1,0 +1,142 @@
+main{
+    width: 100%;
+    background-image: linear-gradient(to bottom,map-get($colores, color-rosa), map-get($colores, color-anaranjado));
+    h2{
+        @include titulo(2rem, 1rem);
+        .titulo{
+            color: map-get($colores, color-marron);
+        }
+    }
+    .titulo-index{
+        text-align: center;
+        color:  map-get($colores, color-marron);
+        font-family: 'Courgette', cursive;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+    .subtitulo-index{
+        text-align: center;
+        color:  map-get($colores, color-marron);
+        font-family: 'Courgette', cursive;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: bolder;
+    }
+    .background-video{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .ceroCincoPadding{
+        padding: 2rem 0rem;
+        .cajaIndex{
+            display: block;
+            width: 90%;
+            height: auto;
+            padding: 2rem;
+            border: 0.7rem map-get($colores, color-celeste) solid;
+            text-align: justify;
+            overflow: hidden;
+            margin: 0rem auto;
+            p{
+                line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+                font-family: 'Raleway', sans-serif;
+                color:  map-get($colores, color-marron);
+            }
+            .img-center{
+                display:block;
+                text-align: center;
+                width: 100%;
+                height: auto;
+            }
+            .centrado{
+                display: block;
+                text-align: center;
+                font-weight: bolder;
+                margin: 0rem auto;            
+                padding: 1rem;
+            }
+        }
+
+    }
+    .paddingHistoria{
+        padding: 2rem 0rem;
+        .cajaHistoria{
+            display: block;
+            width: 90%;
+            height: auto;
+            padding: 2rem;
+            border: 0.7rem map-get($colores, color-celeste) solid;
+            text-align: justify;
+            overflow: hidden;
+            margin: 0rem auto;
+            p{
+                line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+                font-family: 'Raleway', sans-serif;
+                color:  map-get($colores, color-marron);
+            }
+            .imagenCentrada{
+                text-align: center;
+            }
+
+        }
+        
+    }
+    
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        padding: 2rem;
+        text-align: justify;
+        img{
+            padding: 1rem;
+            width: 100%;
+        }
+        .justificado{
+            line-height: 1.5; /*separa los renglones de un parrafo para que se mas visible*/
+            font-family: 'Raleway', sans-serif;
+            color:  map-get($colores, color-marron);
+        }
+    }
+    .productos{
+        display: grid;
+        border: 0.7rem map-get($colores, color-celeste) solid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 2.5rem 3rem 0rem 3rem;
+        .card{
+            border: map-get($colores, color-celeste) solid;
+            border-width: 0.5rem;
+            background-color: transparent;
+            font-family: 'Raleway', sans-serif;
+            color:  map-get($colores, color-marron);
+            margin: 2rem auto;
+            .btn-cyc{
+                background-color: map-get($colores, color-celeste);
+            }
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+    }
+    .img-flex{
+        padding: 2rem;
+        margin: 0 auto;
+        width: 100%;
+        color:  map-get($colores, color-marron);
+        font-family: 'Raleway', sans-serif;
+    }
+    .boton{
+        background-color: map-get($colores, color-azul)!important;
+        border-color: map-get($colores, color-azul)!important;
+    }
+    
+}
